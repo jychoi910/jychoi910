@@ -1,6 +1,7 @@
 body {
-  background-color: powderblue;
-}
+ background-image: url("koi.gif");
+ background-color: #cccccc;
+
 h1 {
   color: blue;
 }
