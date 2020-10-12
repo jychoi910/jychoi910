@@ -1,10 +1,84 @@
+body{
+	background-image:url('koi.jpg');
+	background-position: center fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+ 
+.div1{
+	border:1px solid black;
+	height: 250px;
+	width: 200px;
+	background-image: url('jchoi.jpg');
+	background-position: center fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+
+.div2{
+	border: 3px outset black;
+	background-color: lightblue;
+	text-align: center;
+}	
+
+a:hover {
+  background-color: lightblue;
+}
+span.word {
+    color: red;
+	font-weight:bold;
+}
+
 body {
- background-image: url("koi.jpg");
- background-color: lightblue;
+	color: black;
+	font-family: sans-serif;
+	font-weight: normal;
+	
+
 }
+
+
+
+
 h1 {
-  color: blue;
+  text-align: center;
+  color: black;
 }
-p {
-  color: red;
+<br>
+p{
+  color: black;
+}
+h2 { 
+  text-align: center;
+  color: black;
+}
+div{
+	position: absolute;
+	left: 45%;
+}
+caption {
+	align: top;
+}
+h3 { 
+  text-align: right;
+  color: black;
+}
+ul1 {
+	float: right;
+}
+ul12{
+	float: left;
+}
+ul3 {
+	float: left;
+}
+<br>
+h4 { 
+  text-align: left;
+  color: black;
+}
+
+p2{
+	text-align: right;
 }
