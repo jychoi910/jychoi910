@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="cw2.css"/>
+<title>University of Georgia State Example on embedded style sheets</title>
+<h3>
+<style>
+
+h1{
+	color: red;
+	margin-left: 2cm;
+}
+h2{
+	color: red;
+	margin-left: 4cm;
+}
+p{
+	text-indent: 2cm;
+	color: darkred;
+	margin-left: 6cm;
+}	
+</style>
+</h3>
+</head>
+<body>
+<h1>
+<P style="text-indent: 2cm; color: red;"> This paragraph has been formatted using the in-line style command.
+</P>
+<P>
+This paragraph has not been formatted using the in-line style command.
+</P>
+</h1>
+<h2>font-family: "times new roman; should not have the quotation mark in front of times</h2>
+
+<h3>
+<h1>h1 heading</h1>
+<h2>h2 subheading</h2>
+<p>Paragraph 1</p>
+<p>Paragraph 2</p>
+<h2>h2 subheading</h2>
+<p>Paragraph 1</p>
+</h3>
+
+<h4>
+<p style="font-size:14pt;font-family: Arial;font-weight: bold;background: Moccasin;">
+Artist: 14pt, Arial, Bold, Moccasin
+</p>
+<p style="font-size: 14pt;font-family: Arial;font-weight: normal;background: Khaki;">
+Song Title: 14pt, Arial, Normal, Khaki
+</p>
+<p style="font-size: 12pt;
+	font-family: Arial;
+	font-weight: normal;
+	background: Khaki;">
+Album: 12pt, Arial, Normal, Khaki
+</p>
+<p style="font-size: 12pt;
+	font-family: Arial;
+	font-weight: bold;
+	background: ivory;">
+Year: 12pt, Arial, bold, ivory
+</p>
+<p style="background: chocolate;">
+Background: color=Chocolate
+</p>
+<p style="font-size: 14pt;
+	font-family: Trebuchet MS;
+	font-weight: bold;
+	margin-left: 2cm;
+	margin-right: 2cm;">
+Verse: 14pt, Trebuchet MS, Bold, gold, margin-left 2cm, margin-right 2cm
+</p>
+<p style="font-size: 14pt;
+	font-family: Trebuchet MS;
+	font-weight: bold;
+	font-style: italic;
+	background: gold;
+	margin-left: 4cm:
+	margin-right: 4cm;">
+Chorus: 14pt, Trebuchet MS, Bold & Italic, gold, margin-left 4cm, margin-right 4cm
+</p>
+</h4>
+
+<h5>
+<p1>
+Artist: 14pt, Arial, Bold, Moccasin
+</p1>
+<p2>
+Song Title: 14pt, Arial, Normal, Khaki
+</p2>
+<p3>
+Album: 12pt, Arial, Normal, Khaki
+</p3>
+<p4>
+Year: 12pt, Arial, bold, ivory
+</p4>
+<p5>
+Background: color=Chocolate
+</p5>
+<p6>
+Verse: 14pt, Trebuchet MS, Bold, gold, margin-left 2cm, margin-right 2cm
+</p6>
+<p7>
+Chorus: 14pt, Trebuchet MS, Bold & Italic, gold, margin-left 4cm, margin-right 4cm
+</p7>
+</h5>
+
+<h6 style="font-size: 14pt">
+1. This may be possible by implementing HTML tags and classes and styling them using CSS.
+<br>
+2. I would create design the website by creating a list of teachers linking to their own table that shows the relevant information of assignment due dates, date of exams, etc. It is better than letting every teacher write their own style because having one consistant style would cause less issues with the website than having multiple. 
+<br>
+3. HTML tags and classes used for website: h1-6, p, table, caption, span, tr, th, td, link, and the .teacher class.
+<br>
+4. <br>
+CSS code to be implemented:.teacher{
+	font-size: 14pt;
+	font-family: Arial;
+	background: whtie;
+}
+table, th, td{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+th, td{
+	padding: 5px;
+	text-align: left;
+}
+<h2 class="teacher"><a href="#">Teacher 1</a></h2>
+<table style="width:30%">
+	<caption><b> Teacher 1 </b> 
+	<tr bgcolor="white">
+		<th>Assignments</th>
+		<th>Exams</th>
+		<th>Timetables</th>
+		<th>Subjects</th>
+		<th>Syllabus</th>
+	</tr>
+</table>
+
+</h6>
+</body>
+</html>

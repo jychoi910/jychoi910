@@ -1,0 +1,64 @@
+BODY {
+font-family: times new roman;
+margin-left: 20%;
+margin-right: 20%;
+text-align: justify;
+background: ivory; 
+color : red;
+}
+P{
+text-indent: 2cm;
+color: darkred;
+margin-left:6cm;
+} h1,h2,h3{color:red; 
+margin-left:2cm, 4cm;
+}
+
+p{
+	text-indent: 2cm;
+	color: darkred;
+	margin-left: 6cm;
+}
+p1{
+	font-size: 14pt;
+	font-family: Arial;
+	font-weight: bold;
+	background: Moccasin;
+}
+p2{	
+	font-size: 14pt;
+	font-family: Arial;
+	font-weight: normal;
+	background: Khaki;
+}
+p3{
+	font-size: 12pt;
+	font-family: Arial;
+	font-weight: normal;
+	background: Khaki;
+}
+p4{
+	font-size: 12pt;
+	font-family: Arial;
+	font-weight: bold;
+	background: ivory;
+}
+p5{
+	background: chocolate;
+}
+p6{
+	font-size: 14pt;
+	font-family: Trebuchet MS;
+	font-weight: bold;
+	margin-left: 2cm;
+	margin-right: 2cm;
+}
+p7{
+	font-size: 14pt;
+	font-family: Trebuchet MS;
+	font-weight: bold;
+	font-style: italic;
+	background: gold;
+	margin-left: 4cm:
+	margin-right: 4cm;
+}

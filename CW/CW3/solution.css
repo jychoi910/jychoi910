@@ -1,0 +1,43 @@
+.noflow{
+	clear: both;
+}
+.column{
+	margin-left: 2em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	border-width: 4px;
+	border-color: red;
+	border-style: dashed;
+	padding: 2em;
+}
+header {	
+	text-align: center;
+}
+main{
+	margin: auto;
+	width: 70%;
+	display: flex;
+}
+aside{			
+	flex-basis: 33%;
+	float: left;
+	
+}
+right{	
+	flex-basis: 67%;
+	float: right;
+}
+img{
+	width: 200px;
+	height: auto;
+	float: right;
+}
+
+bot{
+	position: fixed;
+	bottom: 5px;
+
+}
+
+
+
