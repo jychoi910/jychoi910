@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CW8</title>
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript">
+// Defining a function to display error message
+function printError(elemId, hintMsg) {
+    document.getElementById(elemId).innerHTML = hintMsg;
+}
+
+// Defining a function to validate form 
+function validateForm() {
+    // Retrieving the values of form elements 
+    var ID = document.contactForm.ID.value;
+    var firstname = document.contactForm.firstname.value;
+    var lastname = document.contactForm.lastname.value;
+    
+    
+	// Defining error variables with a default value
+    var IDErr = firstnameErr = lastnameErr = true;
+    
+    // Validate ID
+    if(ID == "") {
+        printError("IDErr", "Please enter your ID");
+    } else {
+        var regex = /^[a-zA-Z\s]+$/;                
+        if(regex.test(ID) === false) {
+            printError("IDErr", "Please enter a valid ID");
+        } else {
+            printError("IDErr", "");
+            IDErr = false;
+        }
+    }
+    
+    // Validate firstname address
+    if(firstname == "") {
+        printError("firstnameErr", "Please enter your first name");
+    } else {
+        // Regular expression for basic firstname validation
+        var regex = /^\S+@\S+\.\S+$/;
+        if(regex.test(firstname) === false) {
+            printError("firstnameErr", "Please enter a valid firstname");
+        } else{
+            printError("firstnameErr", "");
+            firstnameErr = false;
+        }
+    }
+    
+    // Validate lastname number
+    if(lastname == "") {
+        printError("lastnameErr", "Please enter your last name");
+    } else {
+        var regex = /^[1-9]\d{9}$/;
+        if(regex.test(lastname) === false) {
+            printError("lastnameErr", "Please enter a valid 10 digit lastname number");
+        } else{
+            printError("lastnameErr", "");
+            lastnameErr = false;
+        }
+    }
+    
+   
+    // Prevent the form from being submitted if there are any errors
+    if((IDErr || firstnameErr || lastnameErr == true) {
+       return false;
+    } else {
+        // Creating a string from input data for preview
+        var dataPreview = "You've entered the following details: \n" +
+                          "ID: " + ID + "\n" +
+                          "First name: " + firstname + "\n" +
+                          "Last name: " + lastname + "\n";                                     
+    
+        // Display input data in a dialog box before submitting the form
+        alert(dataPreview);
+    }
+};
+</script>
+</head>
+<body>
+<form name="contactForm" onsubmit="return validateForm()" action="cw8.html" method="post">
+    <h2>CW8</h2>
+   
+        <label for="ID">ID</label>
+        <input id="ID" type="text" name="ID" />
+        <div class="error" id="IDErr" /></div>
+  		
+        <label for="firstname">First Name:</label>
+        <input id="firstname" type="text" name="firstname" />
+		<div class="error" id="firstnameErr" /></div>
+  
+        <label for="lastname">Last Name: </label>
+        <input id="lastname" type="text" name="lastnameErr" />
+		<div class="error" id="lastnameErr" /></div>
+    
+        <input type="submit" value="Add"/>
+   
+</form>
+</body>
+</html>                            
